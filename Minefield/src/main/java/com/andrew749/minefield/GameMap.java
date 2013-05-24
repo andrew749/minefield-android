@@ -15,7 +15,8 @@ import java.util.Scanner;
  */
 public class GameMap {
 private static BufferedReader r;
-    public GameMap(InputStream mapfile){
+    public GameMap(InputStream mapfile, int screenWidth){
+        tileDimension=(int)Math.ceil(screenWidth/fileWidth);
         explosive=new boolean[fileWidth][fileHeight];
         blocked=new boolean[fileWidth][fileHeight];
         newLevel=new boolean[fileWidth][fileHeight];
@@ -29,7 +30,7 @@ private static BufferedReader r;
     public static boolean[][] explosive;
     public static boolean[][] blocked;
     public static boolean[][] newLevel;
-    public static final int tileDimension=30;
+    public static  int tileDimension;
     public static  int fileWidth=24;
     public static  int fileHeight=42;
     public static void parseFile(){

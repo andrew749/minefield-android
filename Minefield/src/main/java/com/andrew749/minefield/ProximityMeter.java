@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 
 /**
  * Created by andrew on 17/05/13.
@@ -13,16 +14,17 @@ public class ProximityMeter {
     public static int dangerState = 3;
     public static int x, y, blockx, blocky;
     static Paint textpaint;
+    static Bitmap meters;
+    private static Paint indicatorpaint;
+    static Rect indic;
 
     public ProximityMeter(boolean[][] mines, int playerX, int playerY) {
         landmines = mines;
         textpaint = new Paint();
         textpaint.setColor(Color.BLACK);
         textpaint.setTextSize(75);
-    }
-
-    public void drawMeter(Canvas c, int x, int y, int screenWidth) {
-        c.drawText(dangerLevelString(x, y), screenWidth - 300, 100, textpaint);
+        indicatorpaint = new Paint();
+        indicatorpaint.setColor(Color.BLACK);
     }
 
     public static double determineDistanceToMine(int x, int y) {
@@ -53,44 +55,44 @@ public class ProximityMeter {
         return distance;
     }
 
-    public void update(Canvas c, int playerx, int playery, int screenWidth) {
-        drawMeter(c, playerx, playery, screenWidth);
+    public void update(Canvas c, int playerx, int playery, int screenWidth, int screenHeight) {
+        drawIndicator(c, playerx, playery, screenWidth, screenHeight);
     }
 
     /**
-     * danger level of 1 is closest
-     * 2 is safer
-     * 3 is safest
+     * danger level of 1 is safest
+     * 2 is less
+     * 3 is worst
      *
      * @return
      */
     public static int determineDangerLevel(int x, int y) {
         if (determineDistanceToMine(x, y) < 3 && determineDistanceToMine(x, y) != 0) {
-            dangerState = 1;
+            dangerState = 3;
         } else if (determineDistanceToMine(x, y) < 6 && determineDistanceToMine(x, y) != 0) {
             dangerState = 2;
         } else {
-            dangerState = 3;
+            dangerState = 1;
         }
         return dangerState;
     }
-
-    public static String dangerLevelString(int x, int y) {
-        if (determineDangerLevel(x, y) == 1) {
-            return "Danger";
-        } else if (determineDangerLevel(x, y) == 2) {
-            return "Warning";
-        } else {
-            return "Safe";
-        }
-    }
+//draw the gauge
 
     public void drawMeter(Bitmap meter, Canvas c, int screenX, int screenY) {
-        c.drawBitmap(meter, screenX - 100, screenY - 100, new Paint());
+        meters = meter;
+        Bitmap finalmeter = Bitmap.createScaledBitmap(meter, screenX, screenY, true);
+        c.drawBitmap(finalmeter, 0, screenY - 300, new Paint());
     }
 
-    public void drawIndicator(Canvas c, Bitmap arrow) {
-        c.drawBitmap(arrow, 100, 100, new Paint());
+    public void drawIndicator(Canvas c, int playerx, int playery, int screenWidth, int screenHeight) {
+        int dangerposition;
+        dangerposition = (int) ((1 / (determineDistanceToMine(playerx, playery)) * screenWidth));
+        indic = new Rect(dangerposition, screenHeight - 300, dangerposition + 20, screenHeight);
+        c.drawRect(indic, indicatorpaint);
+    }
+
+    public Rect getmeterRect() {
+        return indic;
     }
 
 }

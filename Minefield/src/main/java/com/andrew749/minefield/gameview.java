@@ -21,7 +21,7 @@ public class gameview extends View implements View.OnKeyListener {
     static Player player;
     static Context cxt;
     static GameMap map;
-    static int numberOfMaps = 2;
+    static int numberOfMaps = 3;
     static int nextMap = 1;
     static boolean init = true;
     static ProximityMeter meter;
@@ -29,20 +29,14 @@ public class gameview extends View implements View.OnKeyListener {
     static boolean[][] mines;
     static Bitmap[] explosionAnimation = new Bitmap[26];
     static Bitmap proximityGauge, proximityIndicator;
-    static int[] explosionpics = {R.raw.explosion1, R.raw.explosion2, R.raw.explosion3, R.raw.explosion4, R.raw.explosion5, R.raw.explosion6, R.raw.explosion7, R.raw.explosion8, R.raw.explosion9, R.raw.explosion10, R.raw.explosion11, R.raw.explosion12, R.raw.explosion13, R.raw.explosion14, R.raw.explosion15, R.raw.explosion16, R.raw.explosion17, R.raw.explosion18, R.raw.explosion19, R.raw.explosion20, R.raw.explosion21, R.raw.explosion22, R.raw.explosion23, R.raw.explosion24, R.raw.explosion25};
     static int[] maps = new int[numberOfMaps];
     private static float[] userInput = new float[2];
 
     public gameview(Context context) {
         super(context);
         this.setOnKeyListener(this);
-        for (int i = 1; i <= 25; i++) {
-            try {
-                explosionAnimation[i] = BitmapFactory.decodeResource(getResources(), explosionpics[i]);
-                Log.d("Image Status", "Loaded image " + i);
-            } catch (ArrayIndexOutOfBoundsException e) {
-            }
-        }
+
+
         DisplayMetrics metrics = new DisplayMetrics();
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
@@ -55,10 +49,11 @@ public class gameview extends View implements View.OnKeyListener {
         userInput[0] = 0;
         userInput[1] = 0;
 
-        proximityGauge = BitmapFactory.decodeResource(getResources(), R.raw.gauge);
+        proximityGauge = BitmapFactory.decodeResource(getResources(), R.drawable.gauge);
 
         maps[0] = R.raw.map1;
         maps[1] = R.raw.map2;
+        maps[2] = R.raw.map3;
         map = new GameMap(getResources().openRawResource(maps[0]), screenWidth);
         mines = map.mines();
         meter = new ProximityMeter(mines, player.getX(), player.getY());
@@ -70,6 +65,7 @@ public class gameview extends View implements View.OnKeyListener {
 
         if (init) {
             map.drawMap(canvas);
+            meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
             player.update(userInput, canvas);
             init = false;
         } else {
@@ -77,29 +73,32 @@ public class gameview extends View implements View.OnKeyListener {
                     .tileDimension])) {
                 if (!(GameMap.blocked[(int) player.getX() / map.tileDimension][(int) player.getY() / map
                         .tileDimension])) {
-
                     map.drawMap(canvas);
-                    meter.drawMeter(canvas, player.getX(), player.getY(), getWidth());
                     meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
                     player.update(userInput, canvas);
+                    meter.update(canvas, player.getX(), player.getY(), screenWidth, screenHeight);
+                    invalidate(meter.getmeterRect());
 
                 } else {
 
 
                 }
                 if ((GameMap.newLevel[(int) player.getX() / map.tileDimension][(int) player.getY() / map.tileDimension])) {
-
+                    userInput[0] = 0;
+                    userInput[1] = 0;
                     map = new GameMap(getResources().openRawResource(maps[nextMap]), screenWidth);
+                    meter = new ProximityMeter(mines, player.getX(), player.getY());
                     player.setCoordinates(map.tileDimension, map.tileDimension);
                     nextMap++;
                     Log.d("", "Loaded new map");
                     init = true;
+                    invalidate();
                 }
 
             } else {
                 try {
                     map.drawMap(canvas);
-                    canvas.drawBitmap(explosionAnimation[explosionCount], player.getX(), player.getY(), new Paint());
+                    canvas.drawText("you lose", 0, 0, new Paint());
                     Thread.sleep(100);
                     invalidate();
                     explosionCount++;

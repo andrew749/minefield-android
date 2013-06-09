@@ -40,7 +40,7 @@ public class GameMap {
         warpTile = new Paint();
         mines = new Rect[100][100];
         backgroundtile.setColor(Color.BLACK);
-        blockedtile.setColor(Color.RED);
+        blockedtile.setColor(Color.WHITE);
         leveltile.setColor(Color.GRAY);
         parseFile();
     }

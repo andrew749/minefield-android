@@ -31,7 +31,8 @@ public final class R {
 
     public static final class drawable {
         public static final int custombutton = 0x7f020000;
-        public static final int ic_launcher = 0x7f020001;
+        public static final int gauge = 0x7f020001;
+        public static final int ic_launcher = 0x7f020002;
     }
 
     public static final class id {
@@ -55,38 +56,9 @@ public final class R {
     }
 
     public static final class raw {
-        public static final int explosion1 = 0x7f040000;
-        public static final int explosion10 = 0x7f040001;
-        public static final int explosion11 = 0x7f040002;
-        public static final int explosion12 = 0x7f040003;
-        public static final int explosion13 = 0x7f040004;
-        public static final int explosion14 = 0x7f040005;
-        public static final int explosion15 = 0x7f040006;
-        public static final int explosion16 = 0x7f040007;
-        public static final int explosion17 = 0x7f040008;
-        public static final int explosion18 = 0x7f040009;
-        public static final int explosion19 = 0x7f04000a;
-        public static final int explosion2 = 0x7f04000b;
-        public static final int explosion20 = 0x7f04000c;
-        public static final int explosion21 = 0x7f04000d;
-        public static final int explosion22 = 0x7f04000e;
-        public static final int explosion23 = 0x7f04000f;
-        public static final int explosion24 = 0x7f040010;
-        public static final int explosion25 = 0x7f040011;
-        public static final int explosion3 = 0x7f040012;
-        public static final int explosion4 = 0x7f040013;
-        public static final int explosion5 = 0x7f040014;
-        public static final int explosion6 = 0x7f040015;
-        public static final int explosion7 = 0x7f040016;
-        public static final int explosion8 = 0x7f040017;
-        public static final int explosion9 = 0x7f040018;
-        public static final int gauge = 0x7f040019;
-        public static final int grass = 0x7f04001a;
-        public static final int level = 0x7f04001b;
-        public static final int map1 = 0x7f04001c;
-        public static final int map2 = 0x7f04001d;
-        public static final int rock = 0x7f04001e;
-        public static final int tile = 0x7f04001f;
+        public static final int map1 = 0x7f040000;
+        public static final int map2 = 0x7f040001;
+        public static final int map3 = 0x7f040002;
     }
 
     public static final class string {

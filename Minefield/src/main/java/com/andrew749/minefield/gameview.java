@@ -73,8 +73,11 @@ public class gameview extends View implements View.OnKeyListener {
             player.update(userInput, canvas);
             init = false;
         } else {
-            if (!(GameMap.explosive[(int) player.getX() / map.tileDimension][(int) player.getY() / map.tileDimension])) {
-                if (!(GameMap.blocked[(int) player.getX() / map.tileDimension][(int) player.getY() / map.tileDimension])) {
+            if (!(GameMap.explosive[(int) player.getX() / map.tileDimension][(int) player.getY() / map
+                    .tileDimension])) {
+                if (!(GameMap.blocked[(int) player.getX() / map.tileDimension][(int) player.getY() / map
+                        .tileDimension])) {
+
                     map.drawMap(canvas);
                     meter.drawMeter(canvas, player.getX(), player.getY(), getWidth());
                     meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
@@ -121,10 +124,18 @@ public class gameview extends View implements View.OnKeyListener {
 
     public boolean onKey(View v, int keyCode, KeyEvent event) {
         switch (keyCode) {
-            case KeyEvent.KEYCODE_ENTER:
-         /* This is a sample for handling the Enter button */
+            case KeyEvent.KEYCODE_DPAD_DOWN:
+                userInput[1] = player.getY() + 20;
                 return true;
             case KeyEvent.KEYCODE_DPAD_UP:
+                userInput[1] = player.getY() - 20;
+
+                return true;
+            case KeyEvent.KEYCODE_DPAD_LEFT:
+                userInput[0] = player.getX() - 20;
+                return true;
+            case KeyEvent.KEYCODE_DPAD_RIGHT:
+                userInput[0] = player.getX() + 20;
                 return true;
         }
         return false;

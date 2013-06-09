@@ -11,34 +11,44 @@
             android:layout_height="wrap_content"
             android:text="Play"
             android:id="@+id/button"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:textSize="50dip"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LeaderBoard"
+            android:text="Leaderboard"
             android:id="@+id/button2"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:textSize="50dip"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Goodies"
             android:id="@+id/button3"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:textSize="50dip"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="About"
             android:id="@+id/button4"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:textSize="50dip"/>
 
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Settings"
-            android:id="@+id/button5"/>
+            android:id="@+id/button5"
+            android:background="@drawable/custombutton"
+            android:textSize="50dip"/>
 
     <LinearLayout
             android:layout_width="wrap_content"

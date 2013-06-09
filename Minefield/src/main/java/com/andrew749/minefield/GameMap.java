@@ -26,6 +26,7 @@ public class GameMap {
     private static Paint blockedtile;
     private static Paint warpTile;
     private static Paint leveltile;
+    public static Rect[][] mines;
 
     public GameMap(InputStream mapfile, int screenWidth) {
         tileDimension = (int) Math.ceil(screenWidth / fileWidth);
@@ -37,7 +38,7 @@ public class GameMap {
         leveltile = new Paint();
         blockedtile = new Paint();
         warpTile = new Paint();
-
+        mines = new Rect[100][100];
         backgroundtile.setColor(Color.BLACK);
         blockedtile.setColor(Color.RED);
         leveltile.setColor(Color.GRAY);
@@ -85,6 +86,7 @@ public class GameMap {
                 explosive[x][y] = false;
                 blocked[x][y] = false;
                 newLevel[x][y] = false;
+                mines[x][y] = null;
             }
         }
     }
@@ -99,6 +101,7 @@ public class GameMap {
                 try {
                     Rect r = new Rect(j * tileDimension, i * tileDimension, (j + 1) * tileDimension,
                             (i + 1) * tileDimension);
+                    mines[j][i] = r;
                     if (blocked[j][i]) {
                         c.drawRect(r, blockedtile);
                     } else if (explosive[j][i]) {

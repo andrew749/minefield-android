@@ -2,6 +2,10 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
+    <color name="blue">#3C10DE</color>
+    <color name="grey">#C4C2CC</color>
+    <color name="light_blue">#7051E0</color>
+    <color name="light_grey">#C6C5C9</color>
 
     <declare-styleable name="ButtonBarContainerTheme">
         <attr name="buttonBarStyle" format="reference"/>

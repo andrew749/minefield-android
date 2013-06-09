@@ -23,10 +23,15 @@ public final class R {
 
     public static final class color {
         public static final int black_overlay = 0x7f050000;
+        public static final int blue = 0x7f050001;
+        public static final int grey = 0x7f050002;
+        public static final int light_blue = 0x7f050003;
+        public static final int light_grey = 0x7f050004;
     }
 
     public static final class drawable {
-        public static final int ic_launcher = 0x7f020000;
+        public static final int custombutton = 0x7f020000;
+        public static final int ic_launcher = 0x7f020001;
     }
 
     public static final class id {

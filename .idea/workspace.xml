@@ -28,66 +28,48 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e88a2e1-9c30-447d-9ea3-e73049266321" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion1.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion10.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion11.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion12.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion13.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion14.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion15.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion16.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion17.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion18.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion19.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion2.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion20.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion21.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion22.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion23.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion24.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion25.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion3.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion4.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion5.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion6.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion7.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion8.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/explosion9.bmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/level.png" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/raw/level.png" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/tile.bmp" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/tile.bmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/raw/tile.bmp" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/tile.bmp" />
+    <list default="true" id="3e88a2e1-9c30-447d-9ea3-e73049266321" name="Default" comment="created a menu system&#10;made game controlled by a runnable&#10;removed bitmaps due to performance issues&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/AboutActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Game.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GoodiesActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GoogleAdMobAdsSdk_6_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LeaderBoardActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MenuActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/SettingsActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameelement.aidl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/layout/menuscreen.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/menu.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/menuview.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/src/main/res/layout/menu.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Adapter.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Adapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield-Minefield.iml" afterPath="$PROJECT_DIR$/Minefield-Minefield.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield.iml" afterPath="$PROJECT_DIR$/Minefield.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/source/r/debug/com/andrew749/minefield/R.java" afterPath="$PROJECT_DIR$/Minefield/build/source/r/debug/com/andrew749/minefield/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/activity_fullscreen.xml" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/activity_fullscreen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/layout/activity_fullscreen.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/layout/activity_fullscreen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build.gradle" afterPath="$PROJECT_DIR$/Minefield/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/item.xml" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/layout/item.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/layout/item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map1.txt" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/raw/map1.txt" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/map1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map2.txt" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/raw/map2.txt" afterPath="$PROJECT_DIR$/Minefield/src/main/res/raw/map2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values-v11/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Minefield/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Minefield.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/menuview.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368823348042" ignored="false" />
-    <file path="/Dummy.txt" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369351464526" ignored="false" />
-    <file path="/Adapter.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368823517185" ignored="false" />
-    <file path="$PROJECT_DIR$/Minefield/src/main/res/values-v11/styles.xml" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368819013054" ignored="false" />
-    <file path="$PROJECT_DIR$/Minefield/src/main/res/values-v14/styles.xml" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368819013054" ignored="false" />
-    <file path="/a.xml" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368918889391" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369342365775" ignored="false" />
-    <file path="/MainActivity.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369350987329" ignored="false" />
-    <file path="/gamethread.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368824562633" ignored="false" />
-    <file path="/fragment.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369344716991" ignored="false" />
-    <file path="/Player.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368968513729" ignored="false" />
-    <file path="/gameview.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369354737372" ignored="false" />
-    <file path="/ParseMap.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368843624897" ignored="false" />
-    <file path="/GameMap.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369342968032" ignored="false" />
-    <file path="/ProximityMeter.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368922363969" ignored="false" />
-    <file path="/a.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368918894870" ignored="false" />
-    <file path="/sample.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368918903422" ignored="false" />
-    <file path="/map1.txt" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1368921240280" ignored="false" />
-    <file path="/build.gradle" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369344584000" ignored="false" />
-    <file path="$PROJECT_DIR$/../test/test/src/main/java/com/example/test/MainActivity.java" changelist="3e88a2e1-9c30-447d-9ea3-e73049266321" time="1369350988423" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,11 +135,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="37" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="24" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="885">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1080#1230#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,18 +151,25 @@
       <file leaf-file-name="gameview.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="37" selection-start="5160" selection-end="5160" vertical-scroll-proportion="3.0716724">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="61" column="0" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.94623655" vertical-offset="398" max-vertical-offset="1965">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
+      <file leaf-file-name="GameMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="100" column="35" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1725">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProximityMeter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -197,25 +190,56 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="tasksExpandState">
+      <map>
+        <entry key="" value="true" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Minefield" />
+              <option name="path" value="$PROJECT_DIR$/build.gradle" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="Minefield-Minefield" />
+                <option name="path" value="$PROJECT_DIR$/Minefield/build.gradle" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="Minefield" />
+                <option name="path" value="$PROJECT_DIR$/build.gradle" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Minefield/src/main/res/layout/gamethread.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/res/com/andrew749/minefield/gamethread.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/res/layout/item.xml" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Adapter.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gamethread.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/menuview.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/minefield.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ParseMap.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/res/raw/map1.txt" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/build.gradle" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/res/layout/MenuScreen.xml" />
         <option value="$PROJECT_DIR$/Minefield/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/res/layout/menuscreen.xml" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LeaderBoardActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GoodiesActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/AboutActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/game.aidl" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameelement.aidl" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/res/layout/gamelayout.xml" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Game.java" />
         <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java" />
       </list>
     </option>
   </component>
@@ -223,9 +247,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="-1" />
     <option name="y" value="-4" />
-    <option name="width" value="961" />
+    <option name="width" value="1026" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -288,15 +312,9 @@
               <option name="myItemId" value="Minefield" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Minefield" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minefield" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -308,10 +326,6 @@
               <option name="myItemId" value="Minefield" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Minefield" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -324,14 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Minefield" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,10 +360,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,10 +386,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,21 +425,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.2.13:5555" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Minefield/libs/GoogleAdMobAdsSdk-6.4.1.jar!/" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -453,6 +455,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.Minefield-Minefield">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -469,41 +493,6 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -524,6 +513,19 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -578,6 +580,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -616,43 +623,61 @@
       <workItem from="1369344139516" duration="593000" />
       <workItem from="1369344905389" duration="266000" />
       <workItem from="1369350874005" duration="290000" />
-      <workItem from="1369351463247" duration="3341000" />
+      <workItem from="1369351463247" duration="4794000" />
+      <workItem from="1369356911059" duration="68000" />
+      <workItem from="1369772343270" duration="15000" />
+      <workItem from="1369772397866" duration="1238000" />
+      <workItem from="1369790048405" duration="381000" />
+      <workItem from="1369790460152" duration="2269000" />
+      <workItem from="1369792750038" duration="1406000" />
+      <workItem from="1370431272673" duration="45000" />
+      <workItem from="1370552636298" duration="1366000" />
+      <workItem from="1370561135927" duration="49000" />
     </task>
+    <task id="LOCAL-00001" summary="included explosion animations&#10;added scaling functionality to the program">
+      <created>1369354840216</created>
+      <updated>1369354840216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34504000" />
+    <option name="totallyTimeSpent" value="42794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="961" height="773" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-4" width="1026" height="773" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="165" y="124" width="761" height="573" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.62102956" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9194631" sideWeight="0.30406147" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11829135" sideWeight="0.3776" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3424" sideWeight="0.6190999" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.616" sideWeight="0.69484085" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.6206544" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3424" sideWeight="0.6190999" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.6704" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.6704" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801636" sideWeight="0.6576" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.3793456" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11829135" sideWeight="0.3776" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21577218" sideWeight="0.384" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.49945235" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858709" sideWeight="0.6704" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858709" sideWeight="0.6704" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.62102956" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858709" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6432" sideWeight="0.6952965" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="167" y="180" width="761" height="573" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -696,11 +721,11 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a menu system&#10;made game controlled by a runnable&#10;removed bitmaps due to performance issues&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -710,113 +735,214 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="included explosion animations&#10;added scaling functionality to the program" />
+    <MESSAGE value="added proximity gauge" />
+    <MESSAGE value="created a menu system&#10;made game controlled by a runnable&#10;removed bitmaps due to performance issues&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/layout/item.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/layout/menu.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Adapter.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/DialogInterface.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="65" selection-start="1173" selection-end="1173" vertical-scroll-proportion="1.227045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/menuview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="0.8015267" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/raw/map1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="0" selection-end="1007" vertical-scroll-proportion="0.15267175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="17" selection-start="1928" selection-end="1928" vertical-scroll-proportion="1.4334471" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="2" column="47" selection-start="117" selection-end="117" vertical-scroll-proportion="0.025597269" vertical-offset="0" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Minefield/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="540" selection-end="540" vertical-scroll-proportion="0.30136988">
+        <state line="23" column="3" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/layout/menuscreen.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="45" column="41" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.1960227">
-          <folding />
+        <state line="31" column="42" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.7935154" vertical-offset="0" max-vertical-offset="1080">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java">
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LeaderBoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/raw/map2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="37" selection-start="5160" selection-end="5160" vertical-scroll-proportion="3.0716724">
+        <state line="10" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GoodiesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="259" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="37" selection-start="229" selection-end="229" vertical-scroll-proportion="0.25041735" vertical-offset="0" max-vertical-offset="599">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="0.30050084" vertical-offset="0" max-vertical-offset="599">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameelement.aidl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="130" selection-end="130" vertical-scroll-proportion="0.15025042" vertical-offset="0" max-vertical-offset="599">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/res/raw/gauge.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="214" selection-end="214" vertical-scroll-proportion="-0.9031414" vertical-offset="450" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="38" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.025597269" vertical-offset="435" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="885">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1080#1230#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/GameMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="35" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/ProximityMeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.94623655" vertical-offset="398" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Minefield</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>GoogleAdMobAdsSdk-6.4.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

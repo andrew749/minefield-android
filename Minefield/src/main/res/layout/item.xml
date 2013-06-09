@@ -8,5 +8,7 @@
     <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/imageButton" android:layout_gravity="center"/>
+            android:id="@+id/imageButton"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher"/>
 </LinearLayout>

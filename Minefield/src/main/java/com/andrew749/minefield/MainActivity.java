@@ -15,6 +15,7 @@ public class MainActivity extends Activity implements View.OnTouchListener {
     static gameview view;
     Handler h;
 
+    //main acticity which holds the game view
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         view = new gameview(getApplicationContext());
         setContentView(view);
-        r.run();
 
     }
 
@@ -39,13 +39,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         view.onTouchEvent(event);
         return false;
     }
-
-    private Runnable r = new Runnable() {
-        public void run() {
-            view.invalidate(view.getPlayer().player());
-            h.postDelayed(r, 10);
-        }
-    };
 
 
 }

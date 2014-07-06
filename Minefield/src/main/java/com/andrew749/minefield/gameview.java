@@ -2,7 +2,6 @@ package com.andrew749.minefield;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.DisplayMetrics;
@@ -18,24 +17,25 @@ import android.view.WindowManager;
  */
 public class gameview extends View implements View.OnKeyListener {
     public static int screenWidth, screenHeight;
-    static Player player;
-    static Context cxt;
-    static GameMap map;
-    static int numberOfMaps = 3;
-    static int nextMap = 1;
-    static boolean init = true;
-    static ProximityMeter meter;
-    static int explosionCount = 1;
-    static boolean[][] mines;
-    static Bitmap[] explosionAnimation = new Bitmap[26];
-    static Bitmap proximityGauge, proximityIndicator;
-    static int[] maps = new int[numberOfMaps];
-    private static float[] userInput = new float[2];
+    Player player;
+    Context cxt;
+    GameMap map;
+    int numberOfMaps = 2;
+    int nextMap = 1;
+    ProximityMeter meter;
+    int explosionCount = 1;
+    boolean[][] mines;
+    boolean init = true;
+    boolean running = true;
+    Bitmap[] explosionAnimation = new Bitmap[26];
+    //    static Bitmap proximityGauge, proximityIndicator;
+    int[] maps = new int[numberOfMaps];
+    private float[] userInput = new float[2];
+
 
     public gameview(Context context) {
         super(context);
         this.setOnKeyListener(this);
-
 
         DisplayMetrics metrics = new DisplayMetrics();
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -45,82 +45,105 @@ public class gameview extends View implements View.OnKeyListener {
         screenWidth = metrics.widthPixels;
         screenHeight = metrics.heightPixels;
         cxt = context;
-        player = new Player(100, 100);
+        player = new Player(getContext(), 100, 100);
         userInput[0] = 0;
         userInput[1] = 0;
 
-        proximityGauge = BitmapFactory.decodeResource(getResources(), R.drawable.gauge);
+//        proximityGauge = BitmapFactory.decodeResource(getResources(), R.drawable.gauge);
 
         maps[0] = R.raw.map1;
         maps[1] = R.raw.map2;
-        maps[2] = R.raw.map3;
         map = new GameMap(getResources().openRawResource(maps[0]), screenWidth);
         mines = map.mines();
         meter = new ProximityMeter(mines, player.getX(), player.getY());
     }
+
+
+    //runs the player updating thread
+    Thread mainGame = new Thread() {
+        @Override
+        public void run() {
+            while (running) {
+
+
+                player.update(userInput);
+            }
+        }
+    };
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         if (init) {
-            map.drawMap(canvas);
-            meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
-            player.update(userInput, canvas);
+            mainGame.start();
             init = false;
-        } else {
-            if (!(GameMap.explosive[(int) player.getX() / map.tileDimension][(int) player.getY() / map
+        }
+        map.drawMap(canvas);
+//            meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
+        player.draw(canvas);
+
+
+        if (!(GameMap.explosive[(int) player.getX() / map.tileDimension][(int) player.getY() / map
+                .tileDimension])) {
+            if (!(GameMap.blocked[(int) player.getX() / map.tileDimension][(int) player.getY() / map
                     .tileDimension])) {
-                if (!(GameMap.blocked[(int) player.getX() / map.tileDimension][(int) player.getY() / map
-                        .tileDimension])) {
-                    map.drawMap(canvas);
-                    meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
-                    player.update(userInput, canvas);
-                    meter.update(canvas, player.getX(), player.getY(), screenWidth, screenHeight);
-                    invalidate(meter.getmeterRect());
+                map.drawMap(canvas);
+                player.draw(canvas);
+//                    meter.drawMeter(proximityGauge, canvas, screenWidth, screenHeight);
+//                    meter.update(canvas, player.getX(), player.getY(), screenWidth, screenHeight);
+//                    invalidate(meter.getmeterRect());
+                invalidate(player.playerrect);
 
-                } else {
-
-
-                }
-                if ((GameMap.newLevel[(int) player.getX() / map.tileDimension][(int) player.getY() / map.tileDimension])) {
-                    userInput[0] = 0;
-                    userInput[1] = 0;
-                    map = new GameMap(getResources().openRawResource(maps[nextMap]), screenWidth);
-                    meter = new ProximityMeter(mines, player.getX(), player.getY());
-                    player.setCoordinates(map.tileDimension, map.tileDimension);
-                    nextMap++;
-                    Log.d("", "Loaded new map");
-                    init = true;
-                    invalidate();
-                }
-
-            } else {
+            }
+            if ((GameMap.newLevel[(int) player.getX() / map.tileDimension][(int) player.getY() / map.tileDimension])) {
+                userInput[0] = 0;
+                userInput[1] = 0;
                 try {
-                    map.drawMap(canvas);
-                    canvas.drawText("you lose", 0, 0, new Paint());
-                    Thread.sleep(100);
-                    invalidate();
-                    explosionCount++;
-                } catch (Exception e) {
-                    e.printStackTrace();
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
                 }
+                map = new GameMap(getResources().openRawResource(maps[nextMap]), screenWidth);
+                meter = new ProximityMeter(mines, player.getX(), player.getY());
+                player.setCoordinates(map.tileDimension, map.tileDimension);
+                nextMap++;
+                Log.d("", "Loaded new map");
+
+
+                invalidate();
+            }
+
+        } else {
+            try {
+                map.drawMap(canvas);
+                canvas.drawText("you lose", 0, 0, new Paint());
+                Thread.sleep(100);
+                invalidate();
+                explosionCount++;
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
 
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_MOVE || event.getAction() == MotionEvent.ACTION_UP) {
+
+        if (event.getAction() == MotionEvent.ACTION_MOVE) {
+            //TODO check position of user to ensure they are generally within the previous touch area
             userInput[0] = event.getX();
             userInput[1] = event.getY();
+            Log.d("Minefield", "User Input at x=" + userInput[0] + " and y=" + userInput[1]);
+
         } else {
             userInput[0] = 0;
             userInput[1] = 0;
         }
-        return super.onTouchEvent(event);
+        return true;
     }
 
+    /*Handle key clicks if being played from a gamepad*/
     public boolean onKey(View v, int keyCode, KeyEvent event) {
         switch (keyCode) {
             case KeyEvent.KEYCODE_DPAD_DOWN:

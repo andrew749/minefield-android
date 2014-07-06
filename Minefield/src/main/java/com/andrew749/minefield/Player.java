@@ -1,7 +1,7 @@
 package com.andrew749.minefield;
 
+import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 
@@ -9,17 +9,19 @@ import android.graphics.Rect;
  * Created by andrew on 17/05/13.
  */
 public class Player {
-    public static final int playerHeight = 50;
-    public static final int playerWidth = 30;
+    public static int playerHeight;
+    public static int playerWidth;
     public static int xcoordinate = 0;
     public static int ycoordinate = 0;
-    static Rect playerrect;
-    static int xToIncrease = 10;
-    static int yToIncrease = 10;
+    public Rect playerrect;
+    public static final int xToIncrease = 10;
+    public static final int yToIncrease = 10;
     Paint playerPaint = new Paint();
 
-    public Player(int x, int y) {
-        playerPaint.setColor(Color.CYAN);
+    public Player(Context context, int x, int y) {
+        playerPaint.setColor(context.getResources().getColor(R.color.player_color));
+        playerHeight = context.getResources().getInteger(R.integer.playerheight);
+        playerWidth = context.getResources().getInteger(R.integer.playerwidth);
         xcoordinate = x;
         ycoordinate = y;
         playerrect = new Rect(xcoordinate, ycoordinate, xcoordinate + playerWidth, ycoordinate + playerHeight);
@@ -34,10 +36,10 @@ public class Player {
         c.drawRect(playerrect, playerPaint);
     }
 
-    public void update(float[] coordinates, Canvas c) {
+    public void update(float[] coordinates) {
         movePlayer(coordinates);
         playerrect.set(xcoordinate, ycoordinate, xcoordinate + playerWidth, ycoordinate + playerHeight);
-        draw(c);
+//        draw(c);
     }
 
     public Rect player() {

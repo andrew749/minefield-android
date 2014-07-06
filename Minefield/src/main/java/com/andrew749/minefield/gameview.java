@@ -129,17 +129,20 @@ public class gameview extends View implements View.OnKeyListener {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
+        Log.d("Minefield", "User Input at x=" + event.getX() + " and y=" + event.getY());
+        Log.d("Minefield", "differences are x=" + Math.abs(player.getX() - event.getX()) + " and y=" + Math.abs(player.getY() - event.getY()));
         if (event.getAction() == MotionEvent.ACTION_MOVE) {
-            //TODO check position of user to ensure they are generally within the previous touch area
-            userInput[0] = event.getX();
-            userInput[1] = event.getY();
-            Log.d("Minefield", "User Input at x=" + userInput[0] + " and y=" + userInput[1]);
-
-        } else {
+            if (Math.abs(player.getX() - event.getX()) < 50 && Math.abs(player
+                    .getY() - event.getY()) < 50) {
+                //TODO check position of user to ensure they are generally within the previous touch area
+                userInput[0] = event.getX();
+                userInput[1] = event.getY();
+                Log.d("Minefield", "CHANGING POSITION");
+            }
+        } /*else {
             userInput[0] = 0;
             userInput[1] = 0;
-        }
+        }*/
         return true;
     }
 
@@ -163,7 +166,4 @@ public class gameview extends View implements View.OnKeyListener {
         return false;
     }
 
-    public Player getPlayer() {
-        return player;
-    }
 }

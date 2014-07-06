@@ -32,71 +32,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.andrew749.minefield" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e88a2e1-9c30-447d-9ea3-e73049266321" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LoadingThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/minefield-android.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values/playerspecs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/apk/Minefield-debug-unaligned.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/Adapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/GameMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/MainActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/ProximityMeter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/gameview.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/classes/debug/com/andrew749/minefield/menuview.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/aidl/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/aidl/debug/inputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/aidl/debug/outputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/dex/debug/inputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/dex/debug/outputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeAssets/debug/inputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeAssets/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeAssets/debug/outputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeResources/debug/inputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeResources/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/incremental/mergeResources/debug/outputs.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/libs/Minefield-debug.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/libs/Minefield-debug.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/manifests/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/drawable-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/drawable-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/activity_fullscreen.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/layout/item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/raw/map2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/values-v11/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/values-v14/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/res/all/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/source/buildConfig/debug/com/andrew749/minefield/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minefield/build/source/r/debug/com/andrew749/minefield/R.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield-Minefield.iml" afterPath="$PROJECT_DIR$/Minefield-Minefield.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield.iml" afterPath="$PROJECT_DIR$/Minefield.iml" />
+    <list default="true" id="3e88a2e1-9c30-447d-9ea3-e73049266321" name="Default" comment="Threaded the player update to help alleviate any stress on UI Thread.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/build.gradle" afterPath="$PROJECT_DIR$/Minefield/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/Minefield/src/main/res/values/colors.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" afterPath="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Minefield.iws" />
@@ -168,8 +106,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="690">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,14 +116,24 @@
       <file leaf-file-name="gameview.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.105975196" vertical-offset="1451" max-vertical-offset="2340">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.61104846" vertical-offset="1483" max-vertical-offset="2370">
+              <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1971#2135#0" expanded="true" />
                 <element signature="e#2128#2129#0" expanded="true" />
                 <element signature="method#onKey#0;class#gameview#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="1335">
+              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -807,9 +755,9 @@
         <option value="$PROJECT_DIR$/Minefield/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/Minefield/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/Minefield/src/main/res/values/playerspecs.xml" />
-        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" />
         <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java" />
         <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LoadingThread.java" />
+        <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java" />
         <option value="$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java" />
       </list>
     </option>
@@ -1075,7 +1023,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="04916c02094da67c" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d24a429041813" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -1336,7 +1284,11 @@
       <created>1370784575938</created>
       <updated>1370784575939</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Threaded the player update to help alleviate any stress on UI Thread.&#10;">
+      <created>1404621967759</created>
+      <updated>1404621967759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1366,7 +1318,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.6704" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22790202" sideWeight="0.6736" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22790202" sideWeight="0.6736" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32624868" sideWeight="0.6206544" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="168" y="208" width="761" height="573" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1396,19 +1348,13 @@
     <MESSAGE value="added proximity gauge" />
     <MESSAGE value="created a menu system&#10;made game controlled by a runnable&#10;removed bitmaps due to performance issues&#10;" />
     <MESSAGE value="rethemed menu&#10;removed unneeded files&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="rethemed menu&#10;removed unneeded files&#10;" />
+    <MESSAGE value="Threaded the player update to help alleviate any stress on UI Thread.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threaded the player update to help alleviate any stress on UI Thread.&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java</url>
-          <line>105</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
@@ -1637,17 +1583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2308534" vertical-offset="421" max-vertical-offset="1335">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="e#690#747#0" expanded="true" />
-            <element signature="e#771#827#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/LoadingThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
@@ -1658,16 +1593,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="690">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="1335">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Minefield/src/main/java/com/andrew749/minefield/gameview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.105975196" vertical-offset="1451" max-vertical-offset="2340">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.61104846" vertical-offset="1483" max-vertical-offset="2370">
+          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1971#2135#0" expanded="true" />

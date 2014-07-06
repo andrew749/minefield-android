@@ -57,13 +57,13 @@ public class Player {
     protected void movePlayer(float[] userInput) {
         if (userInput[0] != 0 && userInput[1] != 0) {
             if (userInput[0] < getX()) {
-                if (Math.abs(userInput[0] - getX()) < 10) {
+                if (Math.abs(userInput[0] - getX()) < 30) {
                     --xcoordinate;
                 } else {
                     xcoordinate -= xToIncrease;
                 }
             } else if (userInput[0] > getX()) {
-                if (Math.abs(userInput[0] - getX()) < 100) {
+                if (Math.abs(userInput[0] - getX()) < 30) {
                     ++xcoordinate;
                 } else {
 
@@ -72,14 +72,14 @@ public class Player {
             }
             if (userInput[1] < getY()) {
 
-                if (Math.abs(userInput[0] - getX()) < 10) {
+                if (Math.abs(userInput[0] - getX()) < 30) {
                     --ycoordinate;
                 } else {
 
                     ycoordinate -= yToIncrease;
                 }
             } else if (userInput[1] > getY()) {
-                if (Math.abs(userInput[0] - getX()) < 10) {
+                if (Math.abs(userInput[0] - getX()) < 30) {
                     ++ycoordinate;
                 } else {
 

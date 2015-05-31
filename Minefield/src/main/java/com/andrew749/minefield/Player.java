@@ -9,11 +9,9 @@ import android.graphics.Rect;
 /**
  * Created by andrew on 17/05/13.
  */
-public class Player {
-    public static final int playerHeight = 50;
-    public static final int playerWidth = 30;
-    public static int xcoordinate = 0;
-    public static int ycoordinate = 0;
+public class Player extends Sprite {
+    public static final int playerHeight = 100;
+    public static final int playerWidth = 60;
     static Rect playerrect;
     static int xToIncrease = 10;
     static int yToIncrease = 10;
@@ -21,14 +19,14 @@ public class Player {
 
     public Player(int x, int y) {
         playerPaint.setColor(Color.CYAN);
-        xcoordinate = x;
-        ycoordinate = y;
-        playerrect = new Rect(xcoordinate, ycoordinate, xcoordinate + playerWidth, ycoordinate + playerHeight);
+        this.x = x;
+        this.y = y;
+        playerrect = new Rect(this.x, this.y, this.x + playerWidth, this.y + playerHeight);
     }
 
-    public static void setCoordinates(int x, int y) {
-        xcoordinate = x;
-        ycoordinate = y;
+    public void setCoordinates(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     public void draw(Canvas c) {
@@ -37,7 +35,7 @@ public class Player {
 
     public void update(Point coordinates) {
         movePlayer(coordinates);
-        playerrect.set(xcoordinate, ycoordinate, xcoordinate + playerWidth, ycoordinate + playerHeight);
+        playerrect.set(x, y, x + playerWidth, y + playerHeight);
 
     }
 
@@ -46,43 +44,43 @@ public class Player {
     }
 
     public int getX() {
-        return xcoordinate;
+        return x;
     }
 
     public int getY() {
-        return ycoordinate;
+        return y;
     }
 
     protected void movePlayer(Point userInput) {
         if (userInput.x != 0 && userInput.y != 0) {
             if (userInput.x < getX()) {
                 if (Math.abs(userInput.x - getX()) < 10) {
-                    --xcoordinate;
+                    --x;
                 } else {
-                    xcoordinate -= xToIncrease;
+                    x -= xToIncrease;
                 }
             } else if (userInput.x > getX()) {
                 if (Math.abs(userInput.x - getX()) < 100) {
-                    ++xcoordinate;
+                    ++x;
                 } else {
 
-                    xcoordinate += xToIncrease;
+                    x += xToIncrease;
                 }
             }
             if (userInput.y < getY()) {
 
                 if (Math.abs(userInput.y - getY()) < 10) {
-                    --ycoordinate;
+                    --y;
                 } else {
 
-                    ycoordinate -= yToIncrease;
+                    y -= yToIncrease;
                 }
             } else if (userInput.y > getY()) {
                 if (Math.abs(userInput.y - getY()) < 10) {
-                    ++ycoordinate;
+                    ++y;
                 } else {
 
-                    ycoordinate += yToIncrease;
+                    y += yToIncrease;
                 }
             } else {
             }

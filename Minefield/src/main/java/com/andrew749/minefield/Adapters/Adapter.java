@@ -1,4 +1,4 @@
-package com.andrew749.minefield;
+package com.andrew749.minefield.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+
+import com.andrew749.minefield.R;
 
 /**
  * Created by andrew on 17/05/13.

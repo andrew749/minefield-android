@@ -18,7 +18,7 @@ import java.util.ArrayList;
 /**
  * game view will exclusively deal with drawing the background of the gauge and the tiled map
  */
-public class Backgroundview extends View {
+public class BackgroundView extends View {
     public static int screenWidth, screenHeight;
     static Context cxt;
     public static GameMapParser mapParser;
@@ -28,7 +28,7 @@ public class Backgroundview extends View {
     public static int[] maps = new int[numberOfMaps];
 
 
-    public Backgroundview(Context context, AttributeSet set, int mapnumber) {
+    public BackgroundView(Context context, AttributeSet set, int mapnumber) {
         super(context);
         //get display properties
         DisplayMetrics metrics = new DisplayMetrics();
@@ -44,11 +44,6 @@ public class Backgroundview extends View {
 
         cxt = context;
 
-        //all the maps
-        maps[0] = R.raw.map1;
-        maps[1] = R.raw.map2;
-        maps[2] = R.raw.map3;
-        maps[3] = R.raw.map4;
 
         //create all the map objects
         for (int i = 0; i < maps.length; i++) {
@@ -61,12 +56,6 @@ public class Backgroundview extends View {
         super.onDraw(canvas);
         mapParser.drawMap(canvas);
         ProximityMeter.drawMeter(proximityGauge, canvas);
-
-    }
-
-    public void reDraw(Canvas c) {
-        mapParser.purgeVariables();
-        mapParser = new GameMapParser(getResources().openRawResource(maps[game.currentmap]), screenWidth);
 
     }
 }

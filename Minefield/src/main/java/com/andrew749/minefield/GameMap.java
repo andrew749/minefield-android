@@ -19,8 +19,8 @@ public class GameMap {
     public static boolean[][] blocked;
     public static boolean[][] newLevel;
     public static int tileDimension;
-    public static int fileWidth =24;
-    public static int fileHeight = 42;
+    public static int fileWidth =12;
+    public static int fileHeight = 21;
     private static BufferedReader r;
     private static Paint backgroundtile;
     private static Paint blockedtile;

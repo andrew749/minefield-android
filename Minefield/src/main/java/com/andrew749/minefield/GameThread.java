@@ -9,9 +9,9 @@ public class GameThread extends Thread {
     private SurfaceHolder surfaceHolder;
 
     private game gamePanel;
-    private Backgroundview backgroundview;
+    private BackgroundView backgroundView;
 
-    public GameThread(SurfaceHolder holder, game gamePanel, Backgroundview backgroundview) {
+    public GameThread(SurfaceHolder holder, game gamePanel, BackgroundView backgroundView) {
         surfaceHolder = holder;
         this.gamePanel = gamePanel;
     }
@@ -39,7 +39,7 @@ public class GameThread extends Thread {
             }
 
             if (background) {
-                backgroundview.invalidate();
+                backgroundView.invalidate();
             }
         }
     }

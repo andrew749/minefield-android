@@ -24,7 +24,7 @@ public class gameview extends View implements View.OnKeyListener {
     Player player;
     Context cxt;
     GameMap map;
-    int nextMap = 2;
+    int nextMap = 4;
 //    ProximityMeter meter;
     int explosionCount = 1;
     boolean[][] mines;
@@ -53,7 +53,7 @@ public class gameview extends View implements View.OnKeyListener {
 //        proximityGauge = BitmapFactory.decodeResource(getResources(), R.drawable.gauge);
 
         Resources res=getResources();
-        int index=1;
+        int index=3;
         int tempiden;
         while(res.getIdentifier("map"+index,"raw","com.andrew749.minefield")!=0){
             Log.d("loading","map"+index);

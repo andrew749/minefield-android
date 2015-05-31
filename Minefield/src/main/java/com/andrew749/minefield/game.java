@@ -15,15 +15,15 @@ public class game extends SurfaceView implements SurfaceHolder.Callback {
     public static Point userInput = new Point();
     public static int currentmap = 0;
     private GameThread thread;
-    private Backgroundview backgroundview;
+    private BackgroundView backgroundView;
     int mapnumber = 0;
 
     public game(Context context, AttributeSet set) {
         super(context);
         getHolder().addCallback(this);
         setFocusable(true);
-        backgroundview = new Backgroundview(context, set, 0);
-        thread = new GameThread(getHolder(), this, backgroundview);
+        backgroundView = new BackgroundView(context, set, 0);
+        thread = new GameThread(getHolder(), this, backgroundView);
         userInput.set(0, 0);
         //creates the player
         player = new Player(100, 100);
@@ -36,18 +36,18 @@ public class game extends SurfaceView implements SurfaceHolder.Callback {
     public void draw(Canvas canvas) {
         super.draw(canvas);
 
-        if (CollisionDetection.isCollidedWithMine(player, Backgroundview.map.get(currentmap))) {
+        if (CollisionDetection.isCollidedWithMine(player, BackgroundView.map.get(currentmap))) {
             canvas.drawColor(Color.BLUE);
             //lost a life
         }
-        if (CollisionDetection.isOnLevel(player, Backgroundview.map.get(currentmap))) {
+        if (CollisionDetection.isOnLevel(player, BackgroundView.map.get(currentmap))) {
 
-            initializeNewLevel(Backgroundview.mapParser);
+            initializeNewLevel(BackgroundView.mapParser);
 //            meter = new ProximityMeter(Backgroundview.map.get(currentmap), player,
 //                    Backgroundview.screenHeight,
 //                    Backgroundview.screenWidth);
         }
-        if (CollisionDetection.isBlocked(player, Backgroundview.map.get(currentmap))) {
+        if (CollisionDetection.isBlocked(player, BackgroundView.map.get(currentmap))) {
             player.movePlayer(new Point(0, 0));
         }
         player.update(userInput);

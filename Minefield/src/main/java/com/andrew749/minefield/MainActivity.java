@@ -2,29 +2,29 @@ package com.andrew749.minefield;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.andrew749.minefield.R;
+
 /**
  * Created by andrew on 17/05/13.
  */
-public class MainActivity extends Activity implements View.OnTouchListener {
-    static gameview view;
-    Handler h;
+public class MainActivity extends Activity  {
+    static Backgroundview view;
+    static game game;
+    GameThread thread;
 
-    //main acticity which holds the game view
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        h = new Handler();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        view = new gameview(getApplicationContext());
-        setContentView(view);
+        setContentView(new game(getApplicationContext(),null));
+
 
     }
 
@@ -32,12 +32,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
     protected void onDestroy() {
         super.onDestroy();
 
-    }
-
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        view.onTouchEvent(event);
-        return false;
     }
 
 

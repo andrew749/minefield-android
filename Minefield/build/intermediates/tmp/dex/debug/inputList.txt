@@ -1,0 +1,1 @@
+/Users/andrewcodispoti/Documents/Programming/minefield-android/Minefield/build/intermediates/classes/debug

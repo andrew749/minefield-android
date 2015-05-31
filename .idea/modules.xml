@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Minefield.iml" filepath="$PROJECT_DIR$/Minefield.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Minefield-Minefield.iml" filepath="$PROJECT_DIR$/Minefield-Minefield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Minefield/Minefield.iml" filepath="$PROJECT_DIR$/Minefield/Minefield.iml" />
       <module fileurl="file://$PROJECT_DIR$/minefield-android.iml" filepath="$PROJECT_DIR$/minefield-android.iml" />
     </modules>
   </component>
 </project>
-

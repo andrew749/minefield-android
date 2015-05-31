@@ -1,22 +1,23 @@
+apply plugin: 'android'
 buildscript {
     repositories {
-        maven { url 'http://repo1.maven.org/maven2' }
+        mavenCentral()
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
-apply plugin: 'android'
-dependencies {
-    compile files('libs/android-support-v4.jar', 'libs/GoogleAdMobAdsSdk-6.4.1.jar')
-}
+allprojects { repositories { mavenCentral() } }
+
+
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20"
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 20
+        targetSdkVersion 21
     }
 }

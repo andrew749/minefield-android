@@ -1,9 +1,11 @@
 package com.andrew749.minefield;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -11,6 +13,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+
+import java.util.ArrayList;
 
 /**
  * Created by andrew on 17/05/13.
@@ -20,19 +24,16 @@ public class gameview extends View implements View.OnKeyListener {
     Player player;
     Context cxt;
     GameMap map;
-    int numberOfMaps = 2;
-    int nextMap = 1;
-    ProximityMeter meter;
+    int nextMap = 2;
+//    ProximityMeter meter;
     int explosionCount = 1;
     boolean[][] mines;
     boolean init = true;
     boolean running = true;
     Bitmap[] explosionAnimation = new Bitmap[26];
     //    static Bitmap proximityGauge, proximityIndicator;
-    int[] maps = new int[numberOfMaps];
     private float[] userInput = new float[2];
-
-
+    ArrayList<Integer> maps=new ArrayList<>();
     public gameview(Context context) {
         super(context);
         this.setOnKeyListener(this);
@@ -45,17 +46,23 @@ public class gameview extends View implements View.OnKeyListener {
         screenWidth = metrics.widthPixels;
         screenHeight = metrics.heightPixels;
         cxt = context;
-        player = new Player(getContext(), 100, 100);
+        player = new Player(100, 100);
         userInput[0] = 0;
         userInput[1] = 0;
 
 //        proximityGauge = BitmapFactory.decodeResource(getResources(), R.drawable.gauge);
 
-        maps[0] = R.raw.map1;
-        maps[1] = R.raw.map2;
-        map = new GameMap(getResources().openRawResource(maps[0]), screenWidth);
+        Resources res=getResources();
+        int index=1;
+        int tempiden;
+        while(res.getIdentifier("map"+index,"raw","com.andrew749.minefield")!=0){
+            Log.d("loading","map"+index);
+            maps.add(res.getIdentifier("map" + index, "raw", "com.andrew749.minefield"));
+            index++;
+        }
+        map = new GameMap(getResources().openRawResource(maps.get(0)), screenWidth);
         mines = map.mines();
-        meter = new ProximityMeter(mines, player.getX(), player.getY());
+//        meter = new ProximityMeter(mines, player.getX(), player.getY());
     }
 
 
@@ -64,9 +71,7 @@ public class gameview extends View implements View.OnKeyListener {
         @Override
         public void run() {
             while (running) {
-
-
-                player.update(userInput);
+                player.update(new Point((int)userInput[0],(int)userInput[1]));
             }
         }
     };
@@ -103,8 +108,8 @@ public class gameview extends View implements View.OnKeyListener {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
-                map = new GameMap(getResources().openRawResource(maps[nextMap]), screenWidth);
-                meter = new ProximityMeter(mines, player.getX(), player.getY());
+                map = new GameMap(getResources().openRawResource(maps.get(nextMap)), screenWidth);
+//                meter = new ProximityMeter(mines, player.getX(), player.getY());
                 player.setCoordinates(map.tileDimension, map.tileDimension);
                 nextMap++;
                 Log.d("", "Loaded new map");
@@ -132,8 +137,8 @@ public class gameview extends View implements View.OnKeyListener {
         Log.d("Minefield", "User Input at x=" + event.getX() + " and y=" + event.getY());
         Log.d("Minefield", "differences are x=" + Math.abs(player.getX() - event.getX()) + " and y=" + Math.abs(player.getY() - event.getY()));
         if (event.getAction() == MotionEvent.ACTION_MOVE) {
-            if (Math.abs(player.getX() - event.getX()) < 50 && Math.abs(player
-                    .getY() - event.getY()) < 50) {
+            if (Math.abs(player.getX() - event.getX()) < 100 && Math.abs(player
+                    .getY() - event.getY()) < 100) {
                 //TODO check position of user to ensure they are generally within the previous touch area
                 userInput[0] = event.getX();
                 userInput[1] = event.getY();
@@ -154,7 +159,6 @@ public class gameview extends View implements View.OnKeyListener {
                 return true;
             case KeyEvent.KEYCODE_DPAD_UP:
                 userInput[1] = player.getY() - 20;
-
                 return true;
             case KeyEvent.KEYCODE_DPAD_LEFT:
                 userInput[0] = player.getX() - 20;

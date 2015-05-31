@@ -19,12 +19,13 @@ public class GameMap {
     public static boolean[][] blocked;
     public static boolean[][] newLevel;
     public static int tileDimension;
-    public static int fileWidth = 24;
+    public static int fileWidth =24;
     public static int fileHeight = 42;
     private static BufferedReader r;
     private static Paint backgroundtile;
     private static Paint blockedtile;
     private static Paint warpTile;
+    private static Paint explosiveTile;
     private static Paint leveltile;
     public static Rect[][] mines;
 
@@ -37,11 +38,13 @@ public class GameMap {
         backgroundtile = new Paint();
         leveltile = new Paint();
         blockedtile = new Paint();
+        explosiveTile=new Paint();
         warpTile = new Paint();
         mines = new Rect[100][100];
         backgroundtile.setColor(Color.BLACK);
         blockedtile.setColor(Color.WHITE);
         leveltile.setColor(Color.GRAY);
+        explosiveTile.setColor(Color.RED);
         parseFile();
     }
 
@@ -105,7 +108,7 @@ public class GameMap {
                     if (blocked[j][i]) {
                         c.drawRect(r, blockedtile);
                     } else if (explosive[j][i]) {
-                        c.drawRect(r, blockedtile);
+                        c.drawRect(r, explosiveTile);
                     } else if (newLevel[j][i]) {
                         c.drawRect(r, leveltile);
 
